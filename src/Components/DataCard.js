@@ -6,16 +6,26 @@ class DataCard extends React.Component {
 		super(props);
 		this.state = {
 			donors: [
-			{"contributor_payee":"Loren Parks",
-	 		 "sum":874300},
-	 		{"contributor_payee":"John Arnold",
-			 "sum":500000},
-	 		{"contributor_payee":"Norman L Brenden",
-	 		 "sum":495000},
-	 		{"contributor_payee":"Loren E Parks",
-	 		 "sum":364173.58},
-	 		{"contributor_payee":"Philip Knight",
-	 			"sum":355000}
+				{
+					contributor_payee: "Loren Parks",
+		 		 	sum: 874300
+		 		},
+		 		{
+		 			contributor_payee: "John Arnold",
+				 	sum: 500000
+				},
+		 		{
+		 			contributor_payee: "Norman L Brenden",
+		 		 	sum: 495000
+	 			},
+		 		{
+		 			contributor_payee: "Loren E Parks",
+		 		 	sum: 364173.58
+		 		},
+		 		{
+		 			contributor_payee: "Philip Knight",
+		 			sum: 355000
+	 			}
 	 		]
 		}
 	}
