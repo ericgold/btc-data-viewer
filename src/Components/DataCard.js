@@ -27,12 +27,12 @@ class DataCard extends React.Component {
 		 			sum: 355000
 	 			}
 	 		]
-		}
+		};
 	}
 	render() {
 		return(
 			<div className="data-card">
-				<h1>Card Title</h1>
+				<h1>{this.props.title}</h1>
 				<DonorList />
 			</div>
 		)

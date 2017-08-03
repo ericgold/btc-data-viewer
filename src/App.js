@@ -11,8 +11,8 @@ class App extends Component {
           <h2>Behind the Curtain Data Viewer</h2>
         </div>
         <main>
-          <DataCard />
-          <DataCard />
+          <DataCard title={"Individuals"} />
+          <DataCard title={"Corporations"} />
         </main>
         
       </div>
