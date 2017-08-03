@@ -5,6 +5,10 @@ class DataCard extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			person: {
+				name: "Eric Gold",
+				amount: 100
+			},
 			donors: [
 				{
 					contributor_payee: "Loren Parks",
@@ -29,11 +33,12 @@ class DataCard extends React.Component {
 	 		]
 		};
 	}
+	// fetch method to get data
 	render() {
 		return(
 			<div className="data-card">
 				<h1>{this.props.title}</h1>
-				<DonorList />
+				<DonorList donors={this.state.donors}/>
 			</div>
 		)
 	}
