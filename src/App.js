@@ -12,7 +12,7 @@ class App extends Component {
         </div>
         <main>
           <DataCard title={"Individuals"} />
-          <DataCard title={"Corporations"} />
+          {/*<DataCard title={"Corporations"} />*/}
         </main>
         
       </div>
