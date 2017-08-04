@@ -1,0 +1,9 @@
+.donor-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.donor-name, .donor-sum {
+	margin-right: 1rem;
+}
