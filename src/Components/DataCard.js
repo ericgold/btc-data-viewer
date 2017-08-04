@@ -25,10 +25,7 @@ class DataCard extends React.Component {
 		return(
 			<div className="data-card">
 				<h1>{this.props.title}</h1>
-				{
-					
-					<DonorList donors={this.state.donors} />
-				}
+				<DonorList donors={this.state.donors} />
 			</div>
 		)
 	}
