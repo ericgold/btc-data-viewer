@@ -32,17 +32,18 @@ class SummaryCard extends React.Component {
 	}
 
 	render() {
+		const { out, from_within, to_within, from_outside, to_outside, total_grass_roots, total_from_in_state } = this.state;
 		return(
 			<div className="summary-card">
 				<h1>Summary</h1>
 				<div>In: {this.state.in}</div>
-				<div>Out: {this.state.out}</div>
-				<div>From Within: {this.state.from_within}</div>
-				<div>To Within: {this.state.to_within}</div>
-				<div>From Outside: {this.state.from_outside}</div>
-				<div>To Outside: {this.state.to_outside}</div>
-				<div>Total Grass Roots: {this.state.total_grass_roots}</div>
-				<div>Total From In State: {this.state.total_from_in_state}</div>
+				<div>Out: {out}</div>
+				<div>From Within: {from_within}</div>
+				<div>To Within: {to_within}</div>
+				<div>From Outside: {from_outside}</div>
+				<div>To Outside: {to_outside}</div>
+				<div>Total Grass Roots: {total_grass_roots}</div>
+				<div>Total From In State: {total_from_in_state}</div>
 			</div>
 		)
 	}
