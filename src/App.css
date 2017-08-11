@@ -23,12 +23,16 @@ main {
   flex-direction: column;
 }
 
+main div {
+  display: flex;
+  flex-direction: column;
+}
+
 .data-card,
 .summary-card {
   display: flex;
   flex-direction: column;
   width: 80%;
-  max-width: 300px;
   margin: 3rem auto;
   padding: 1rem;
   border: 2px solid black;
@@ -47,12 +51,12 @@ main {
   padding: 0;
 }
 
-/*@media (min-width: 768px) {
-  main {
+@media (min-width: 768px) {
+  main div {
     flex-direction: row;
   }
 
   .data-card {
     width: 40%;
   }
-}*/
+}
