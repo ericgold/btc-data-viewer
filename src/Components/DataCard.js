@@ -31,9 +31,9 @@ class DataCard extends React.Component {
 		this.getData(url);
 	}
 	
-	componentDidMount(props) { 
+	componentDidMount() { 
 		const url = `${this.props.url}${this.state.count}/`;
-		this.getData(props);
+		this.getData(url);
 	}
 
 	render() {
