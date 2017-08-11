@@ -11,7 +11,6 @@ class DataCard extends React.Component {
 		};
 		this.getData = this.getData.bind(this);
 		this.updateCount = this.updateCount.bind(this);
-		this.createUrl = this.createUrl.bind(this);
 	}
 	// fetch method to get data
 	getData(url) {
@@ -22,21 +21,19 @@ class DataCard extends React.Component {
 	}
 
 	updateCount(event) {
-		//console.log(event.target.value);
 		this.setState({
 			count: event.target.value
 		})
-		this.createUrl();
 	}
 
-	createUrl(props) {
+	componentDidUpdate() {
 		const url = `${this.props.url}${this.state.count}/`;
 		this.getData(url);
 	}
 	
 	componentDidMount(props) { 
-		//this.getData(this.props.url);
-		this.createUrl(props);
+		const url = `${this.props.url}${this.state.count}/`;
+		this.getData(props);
 	}
 
 	render() {
