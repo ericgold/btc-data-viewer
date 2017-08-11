@@ -42,9 +42,9 @@ class DataCard extends React.Component {
 				<h1>{this.props.title}</h1>
 				<input 
 					type="number" 
-					placeholder="enter a number from 1-10"
+					placeholder="enter 1-50"
 					min="0"
-					max="10"
+					max="50"
 					onChange={this.updateCount}/>
 				<DonorList donors={this.state.donors} />
 			</div>
