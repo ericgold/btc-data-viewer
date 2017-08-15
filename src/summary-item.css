@@ -1,7 +1,15 @@
 .summary-item {
 	display: flex;
-	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	width: 40%;
+	background-color: green;
+	color: white;
+	margin: 1rem;
+	padding: 0 0.5rem;
+}
+
+.summary-item p {
+	font-size: 1.5rem;
+	margin-left: auto;
 }
