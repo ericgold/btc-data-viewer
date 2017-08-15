@@ -21,8 +21,7 @@ main > div {
   justify-content: space-between;
 }
 
-.data-card,
-.summary-card {
+.data-card {
   display: flex;
   flex-direction: column;
   width: 80%;

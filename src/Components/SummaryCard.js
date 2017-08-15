@@ -1,6 +1,7 @@
 import React from 'react';
 import SummaryItem from './SummaryItem';
-
+import formatDollars from '../helpers';
+import '../summary-card.css';
 
 class SummaryCard extends React.Component {
 	constructor(props) {
@@ -16,14 +17,14 @@ class SummaryCard extends React.Component {
 		return fetch(url, {})
 								 .then(response => response.json())
 								 .then(jsonData => this.setState({ 
-								 		in: jsonData[0].in ,
-								 		out: jsonData[0].out,
-								 		from_within: jsonData[0].from_within,
-								 		to_within: jsonData[0].to_within,
-								 		from_outside: jsonData[0].from_outside,
-								 		to_outside: jsonData[0].to_outside,
-								 		total_grass_roots: jsonData[0].total_grass_roots,
-								 		total_from_in_state: jsonData[0].total_from_in_state
+								 		in: formatDollars(jsonData[0].in),
+								 		out: formatDollars(jsonData[0].out),
+								 		from_within: formatDollars(jsonData[0].from_within),
+								 		to_within: formatDollars(jsonData[0].to_within),
+								 		from_outside: formatDollars(jsonData[0].from_outside),
+								 		to_outside: formatDollars(jsonData[0].to_outside),
+								 		total_grass_roots: formatDollars(jsonData[0].total_grass_roots),
+								 		total_from_in_state: formatDollars(jsonData[0].total_from_in_state)
 								 	}))
 								 .catch(error => console.log(error));
 	}
