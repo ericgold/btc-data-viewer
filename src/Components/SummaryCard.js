@@ -1,4 +1,5 @@
 import React from 'react';
+import SummaryItem from './SummaryItem';
 
 
 class SummaryCard extends React.Component {
@@ -36,14 +37,16 @@ class SummaryCard extends React.Component {
 		return(
 			<div className="summary-card">
 				<h1>Summary</h1>
-				<div>In: {this.state.in}</div>
-				<div>Out: {out}</div>
-				<div>From Within: {from_within}</div>
-				<div>To Within: {to_within}</div>
-				<div>From Outside: {from_outside}</div>
-				<div>To Outside: {to_outside}</div>
-				<div>Total Grass Roots: {total_grass_roots}</div>
-				<div>Total From In State: {total_from_in_state}</div>
+				<div>
+					<SummaryItem title={"In:"} amount={this.state.in} />
+					<SummaryItem title={"Out:"} amount={out} />
+					<SummaryItem title={"From Within:"} amount={from_within} />
+					<SummaryItem title={"To Within:"} amount={to_within} /> 
+					<SummaryItem title={"From Outside:"} amount={from_outside} /> 
+					<SummaryItem title={"To Outside:"} amount={to_outside} /> 
+					<SummaryItem title={"Total Grass Roots:"} amount={total_grass_roots} /> 
+					<SummaryItem title={"Total From In State:"} amount={total_from_in_state} /> 
+				</div>
 			</div>
 		)
 	}
