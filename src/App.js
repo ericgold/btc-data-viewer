@@ -15,7 +15,10 @@ class App extends Component {
             <DataCard title={"Individuals"} url={"http://54.213.83.132/hackoregon/http/oregon_individual_contributors/"} />
             <DataCard title={"Corporations"} url={"http://54.213.83.132/hackoregon/http/oregon_business_contributors/"} />
           </div>
-          <SummaryCard title={"Summary"} url={"http://54.213.83.132/hackoregon/http/all_oregon_sum/_/"} />
+          <div>
+            <SummaryCard title={"Summary"} url={"http://54.213.83.132/hackoregon/http/all_oregon_sum/_/"} />
+          </div>
+          
         </main>
       </div>
     );

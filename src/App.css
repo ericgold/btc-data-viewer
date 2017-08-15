@@ -1,31 +1,24 @@
+* {
+  border: 1px solid green;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem;
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 5rem;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-main {
+main > div {
   display: flex;
   flex-direction: column;
-}
-
-main div {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .data-card,
@@ -52,11 +45,12 @@ main div {
 }
 
 @media (min-width: 768px) {
-  main div {
+  main > div {
     flex-direction: row;
   }
 
   .data-card {
     width: 40%;
   }
+  
 }
